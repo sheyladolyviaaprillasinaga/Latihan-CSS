@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulir</title>
+</head>
+<body style="background-color: cadetblue;" >
+
+    <h1 style="text-align: center;">Formulir</h1>
+
+    <form action="next_page.html" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama" required><br><br>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" pattern="[0-9]+" placeholder="Masukkan nomor telepon (angka saja)" required><br><br>
+
+        <label for="jenis kelamin">jenis kelamin:</label>
+        <input type="checkbox" id="jenis kelamin" name="jenis" value="kelamin" checked>
+        <label for="perempuan">perempuan</label>
+        <input type="checkbox" id="jenis kelamin" name="jenis" value="kelamin" checked>
+        <label for="laki-laki">laki-laki</label></select><br><br>
+
+
+        <label for="asalKota">Asal Kota:</label>
+        <select id="asalKota" name="asalKota">
+            <option value="Purwokerto" selected>Purwokerto</option>
+            <option value="Jakarta">Jakarta</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Bandung">Bandung</option>
+            <option value="Semarang">Semarang</option>
+            <option value="Malang">Malang</option>
+        </select><br><br>
+
+        <label for="hobi">Hobi:</label>
+        <input type="checkbox" id="hobiMenulis" name="hobi" value="Menulis" checked>
+        <label for="hobiMenulis">Menulis</label>
+        <input type="checkbox" id="hobiMembaca" name="hobi" value="Membaca">
+        <label for="hobiMembaca">Membaca</label>
+        <input type="checkbox" id="hobiOlahraga" name="hobi" value="Olahraga">
+        <label for="hobiOlahraga">Olahraga</label>
+        <input type="checkbox" id="hobiMenonton" name="hobi" value="Menonton">
+        <label for="hobiMenonton">Menonton</label>
+        <input type="checkbox" id="hobiMakan" name="hobi" value="Makan">
+        <label for="hobiMakan">Makan</label><br><br>
+
+        <label for="makananFavorit">Makanan Favorit:</label>
+        <input type="text" id="makananFavorit" name="makananFavorit" list="makananList" placeholder="Masukkan makanan favorit">
+        <datalist id="makananList">
+            <option value="Nasi Goreng">
+            <option value="Pizza">
+            <option value="Sushi">
+            <option value="Burger">
+            <option value="Pasta">
+        </datalist><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+    <br>
+    <button onclick="location.href='next_page.html'">Next Page</button>
+</body>
+</html>
